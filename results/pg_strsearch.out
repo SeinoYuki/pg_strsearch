@@ -1,0 +1,22 @@
+CREATE EXTENSION pg_strsearch;
+CREATE TABLE pg_strsearch_rg (
+	col1	VARCHAR(128),
+	col2	VARCHAR(128),
+	col3	VARCHAR(128)
+);
+INSERT INTO pg_strsearch_rg VALUES('test1', NULL, 'dummy');
+INSERT INTO pg_strsearch_rg VALUES('test1', 'test2', 'dummy');
+INSERT INTO pg_strsearch_rg VALUES('test1', 'test2', 'test3');
+SELECT pg_strsearch('test');
+         pg_strsearch         
+------------------------------
+ (pg_strsearch_rg,col1,test1)
+ (pg_strsearch_rg,col1,test1)
+ (pg_strsearch_rg,col1,test1)
+ (pg_strsearch_rg,col2,test2)
+ (pg_strsearch_rg,col2,test2)
+ (pg_strsearch_rg,col3,test3)
+(6 rows)
+
+DROP TABLE pg_strsearch_rg;
+DROP EXTENSION pg_strsearch;

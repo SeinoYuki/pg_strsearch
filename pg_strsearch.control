@@ -1,0 +1,6 @@
+# pg_strsearch extension
+comment = 'pg_strsearch is add and submodule'
+default_version = '1.0'
+module_pathname = '$libdir/pg_strsearch'
+relocatable = false
+schema = pg_catalog
