@@ -4,15 +4,15 @@ This extension provides cheat (but useful) functions on PostgreSQL.
 pg_strsearch is released under the [PostgreSQL License](https://opensource.org/licenses/postgresql), a liberal Open Source license, similar to the BSD or MIT licenses.
 
 ## Test Status
-[![Build Status](https://travis-ci.org/SeinoYuki/pg_strsearch.svg?branch=master)](https://travis-ci.org/SeinoYuki/pg_strsearch)
+[![Build Status](https://travis-ci.org/github/SeinoYuki/pg_strsearch.svg?branch=master)](https://travis-ci.org/github/SeinoYuki/pg_strsearch)
 
 ## Install
 
-Download the source archive of pg_cheat_funcs from
+Download the source archive of pg_strsearch from
 [here](https://github.com/SeinoYuki/pg_strsearch),
 and then build and install it.
 
-    $ cd pg_cheat_funcs
+    $ cd pg_strsearch
     $ make USE_PGXS=1 PG_CONFIG=/opt/pgsql-X.Y.Z/bin/pg_config
     $ su
     # make USE_PGXS=1 PG_CONFIG=/opt/pgsql-X.Y.Z/bin/pg_config install
